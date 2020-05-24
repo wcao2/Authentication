@@ -10,7 +10,7 @@ const jwt=require('jsonwebtoken')
 const mongoose=require('mongoose')
 
 //1:connect to database
-const db="mongodb+srv://weicao:caowei1992@cluster0-lvcsa.mongodb.net/eventsdb?retryWrites=true&w=majority"
+const db="mongodb+srv://weicao:caowei1994@cluster0-lvcsa.mongodb.net/eventsdb?retryWrites=true&w=majority"
 //const db="mongodb+srv://${process.env.DB_USER}:${process.env.DB_PWD}@cluster0-lvcsa.mongodb.net/eventsdb?retryWrites=true&w=majority"
 
 mongoose.connect(db, { useUnifiedTopology: true,useNewUrlParser: true  } ,err=>{
