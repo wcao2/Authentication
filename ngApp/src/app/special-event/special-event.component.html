@@ -1,0 +1,15 @@
+<div class="row mt-5">
+    <!-- md-4: 3 events per row due to bootstrap has 12 column grids -->
+    <div class="col-md-4 mb-3" *ngFor="let specialEvent of specialEvents">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">{{specialEvent.name}}</h5>
+          <p class="card-text">{{specialEvent.description}}</p>
+          <a href="#" class="btn btn-success">Buy Tickets</a>
+        </div>
+        <div class="card-footer text-muted">
+          {{specialEvent.date | date:'shortDate'}}
+        </div>
+      </div>
+    </div>
+</div>
